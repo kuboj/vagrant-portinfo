@@ -5,5 +5,5 @@ group :development do
 end
 
 group :plugins do
-  gem "vagrant-port", path: "."
+  gem "vagrant-portinfo", path: "."
 end

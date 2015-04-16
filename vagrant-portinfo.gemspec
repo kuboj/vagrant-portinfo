@@ -1,10 +1,10 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'vagrant-port/version'
+require 'vagrant-portinfo/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "vagrant-port"
+  spec.name          = "vagrant-portinfo"
   spec.version       = Vagrant::Port::VERSION
   spec.authors       = ["Jakub Jursa"]
   spec.email         = ["jju@rsd.com"]
