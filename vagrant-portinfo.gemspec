@@ -5,7 +5,7 @@ require 'vagrant-portinfo/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "vagrant-portinfo"
-  spec.version       = Vagrant::Port::VERSION
+  spec.version       = Vagrant::Portinfo::VERSION
   spec.authors       = ["Jakub Jursa"]
   spec.email         = ["jju@rsd.com"]
   spec.summary       = %q{Vagrant plugin for displaying forwarded ports}
