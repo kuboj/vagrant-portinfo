@@ -1,13 +1,11 @@
 module Vagrant
   module Portinfo
-    class Command < Vagrant.plugin('2', :command)
+    class Command < Vagrant.plugin("2", :command)
       def self.synopsis
         "prints information about ports forwarded of a running machine."
       end
 
       def execute
-        # options = {}
-
         opts = OptionParser.new do |o|
           o.banner = "Usage: vagrant portinfo [name]"
           o.separator ''
