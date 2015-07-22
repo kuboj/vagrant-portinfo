@@ -34,6 +34,15 @@ guest: 22	host: 2220
 guest: 80	host: 8080
 ```
 
+Plugin also supports `--machine-readable` flag:
+```
+$ vagrant portinfo --machine-readable
+1437575900,db,forwarded_port,22,2202
+1437575900,db,forwarded_port,80,2201
+1437575900,web,forwarded_port,22,2200
+1437575900,web,forwarded_port,80,10081
+```
+
 ## Contributing
 
 1. Fork it ( https://github.com/kuboj/vagrant-portinfo/fork )
