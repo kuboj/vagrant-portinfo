@@ -30,6 +30,7 @@ module Vagrant
 
         machine.provider.driver.read_forwarded_ports(machine.id, true).each do |i|
           @env.ui.info("guest: #{i[3]}\thost: #{i[2]}")
+          @env.ui.machine("forwarded_port", i[3], i[2], target: machine.name.to_s)
         end
       end
     end
